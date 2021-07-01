@@ -17,8 +17,7 @@ function App() {
        <input type='number' onChange={(e)=>inputCh2(e.target.value)} value={inputVal2} />
        <button onClick={()=>{var sum = parseInt(inputVal1)+parseInt(inputVal2); alert(sum);}}>+</button>
        <button onClick={()=>{var min = parseInt(inputVal1)-parseInt(inputVal2); alert(min);}}>-</button>
-    </div>
+    </div> 
   );
 }
-
 export default App;
