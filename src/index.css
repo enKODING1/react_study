@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0px;
+  
+}
+
+.App{
+  width:400px;
+  position: relative;
+  top: 400px;
+  left: 30%;
+  animation: slide 1s both;
+}
+
+@keyframes slide{
+   0%{
+     left: -10%;
+   }
+   40%{
+     left: 40%;
+   }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  }
+
+input[type="number"]{
+   border: none;
+   background-color: bisque;
+   width: 20%;
+   height: 30px;
+   margin: 0px 3px;
+   text-align:center;
+}
+
+span{
+  cursor: pointer;
+  user-select: none;
 }
