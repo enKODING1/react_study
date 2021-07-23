@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(248, 249, 250);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*navbar*/
+.navbox{
+  height: 4rem;
+}
+.navbar{
+  width: 90.5%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logowrap{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width:71px ;
+  height: 24px;
+}
+
+
+.tool{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+  align-items: center;
+}
+.search{
+  width: 17px;
+  height: 17px;
+}
+.search:hover{
+  border-radius: 100%;
+}
+
+.login{
+    border: none;
+    width: 80px;
+    height: 32px;
+    border-radius: 20px;
+    background-color:rgb(52, 58, 64);
+    color: rgb(248, 249, 250);
+    
+}
+.login h3{
+  margin: 0;
+  pad: 0;
+}
+.login:hover{
+  background-color: rgb(134, 142, 150);
+}
+
+/*bar*/
+.barbox{
+  width: 90.5%;
+  height: 48px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.bar > div > svg{
+  width: 24px;
+  height: 24px;
+}
+.item{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 7rem;
+  color: rgb(52, 58, 64);
+  font-weight: bold;
+  font-size: 1.125rem;
+  cursor: pointer;
+ 
+}
+.underline{
+  position: absolute;
+  width: 112px;
+  height: 2px;
+  bottom: 0;
+  left: 0px;
+  background-color: rgb(52, 58, 64);
+}
+.item:nth-child(2){
+  color: rgb(134, 142, 150);
+}
+.item:nth-child(2) > svg{
+  fill: rgb(134, 142, 150);
+}
+
+.item > svg{
+  margin-right: 8px;
+}
+
+.day{
+  width: 5rem;
+  height: 32px;
+  background-color:white;
+  padding: 0px 8px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 4px;
+}
+
+
+
+
+.add{
+  display: flex;
+  align-items: center;
+}
+.add > svg{
+  width: 24px;
+  height: 24px;
+  color: rgb(134, 142, 150)
+}
+
+
+/* main contents */
+.main-wrapper{
+  width: 90.5%;
+  display: flex;
+  margin-top: 3rem;
+  margin: 0 auto;
+}
+.main{
+  width: 90.5%;
+  flex:1 1 0%;
+  display: block;
+
+}
+.contents{
+  width: 103%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
+
+.content{
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
+  height: 376.61px;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.content:hover{
+
+    transform: translateY(-8px);
+    box-shadow: rgb(0 0 0 / 8%) 0px 12px 20px 0px;
+
+}
+
+.imgbox{
+  width: 100%;
+  height: 167.01px;
+  position: relative;
+}
+
+.imgbox > img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.subtit > a > .text {
+  height:5.6rem;
+}
+
+.subtit{
+  padding: 1rem;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+}
+.subtit > a{
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+ 
+  
+}
+.subtit > a > div > p{
+  color: rgb(73, 80, 87);
+  font-size: 0.875rem;
+  margin: 0;
+  margin-bottom:1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subtit > a > h4{
+  margin: 0;
+  margin-bottom: 4px;
+  
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+}
+
+.subinfo{
+  font-size: 0.75rem;
+  color: rgb(134, 142, 150);
+}
+.subinfo .separator{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+
+.subwho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: 0.75rem;
+  border-top: 1px solid rgb(248, 249, 250);
+}
+.subwho > a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.subwho > a > img{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+.subwho > a > span{
+  color: rgb(134, 142, 150);
+}
+.subwho > a > span > b{
+  color: rgb(52, 58, 64);
+}
+
+
+
+.heart{
+  display: flex;
+  align-items: center;
+}
+.heart > svg{
+  width: 0.75rem;
+  height:0.75rem;
+  margin-right: 0.5rem;
+}
+.blank{
+  padding-top:52.19206680584551%;
+}
+
+.text > p {
+  margin: 0px 0px 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    height: 3.9375rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(73, 80, 87);
+}
+
+/*모바일일때*/
+
+@media screen and (max-width: 768px) {
+   .barbox{
+    width: 92.5%;
+   }
+   .contents{
+    width: 102.5%;
+    margin-left: -8px;
+    margin-top: 1.9rem;
+   }
+   .content{
+    
+    height: 27.7rem;
+    width: 28rem;
+    margin: 0;
+    margin-bottom: 1.1rem;
+  
+   }
+   .content:hover{
+    transform: translateY(0);
+    box-shadow: rgb(0 0 0 / 8%) 0px 12px 20px 0px;
+   }
+   .imgbox{
+    height: 14.8rem;
+   }
+   .logo{
+     height: 1.25rem;
+   }
+   .bar > div > svg {
+    width: 20px;
+    height: 20px;
+  }
+  .item{
+    font-size: 1rem;
+    width: 5.4rem;
+  }
+  .day{
+    font-size: 0.75rem;
+    width: 4rem;
+  }
+  .underline{
+    width: 5.4rem;
+  }
+  .subtit > a > div > p{
+    margin: 0px 0px 1.5rem;
+    
+    font-size: 0.875rem;
+    line-height: 1.5;
+    height: 3.9375rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(73, 80, 87);
+  }
+  
+
+}
+
